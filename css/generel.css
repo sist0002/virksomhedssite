@@ -4,26 +4,29 @@
 
 /* fonts */
 h1 {
-  font-family: "GothicA1-ExtraBold";
+  font-family: "gothic-extrabold";
   font-size: 56px;
 }
 h2 {
-  font-family: "GothicA1-Regular";
+  font-family: "gothic-regular";
   font-size: 34px;
 }
-p {
-  font-family: "GothicA1-ExtraBold";
-  font-size: 22px;
+p,
+label,
+button,
+legend {
+  font-family: "actor";
+  font-size: 17px;
 }
 @font-face {
-  font-family: "Actor-Regular";
+  font-family: "actor";
   src: url(../fonts/Actor-Regular.ttf);
 }
 @font-face {
-  font-family: "GothicA1-Regular";
+  font-family: "gothic-regular";
   src: url(../fonts/GothicA1-Regular.ttf);
 }
 @font-face {
-  font-family: "GothicA1-ExtraBold";
+  font-family: "gothic-extrabold";
   src: url(../fonts/GothicA1-ExtraBold.ttf);
 }

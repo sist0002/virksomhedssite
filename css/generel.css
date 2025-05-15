@@ -1,0 +1,29 @@
+:root {
+  background-color: #f4f2ec;
+}
+
+/* fonts */
+h1 {
+  font-family: "GothicA1-ExtraBold";
+  font-size: 56px;
+}
+h2 {
+  font-family: "GothicA1-Regular";
+  font-size: 34px;
+}
+p {
+  font-family: "GothicA1-ExtraBold";
+  font-size: 22px;
+}
+@font-face {
+  font-family: "Actor-Regular";
+  src: url(../fonts/Actor-Regular.ttf);
+}
+@font-face {
+  font-family: "GothicA1-Regular";
+  src: url(../fonts/GothicA1-Regular.ttf);
+}
+@font-face {
+  font-family: "GothicA1-ExtraBold";
+  src: url(../fonts/GothicA1-ExtraBold.ttf);
+}

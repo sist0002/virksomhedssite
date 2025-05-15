@@ -1,0 +1,34 @@
+:root {
+  background-color: #f4f2ec;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+#contactinfo {
+  margin: 2em;
+}
+
+/* fonts */
+h1 {
+  font-family: "gothic-extrabold";
+  font-size: 56px;
+}
+h2 {
+  font-family: "gothic-regular";
+  font-size: 34px;
+}
+p {
+  font-family: "actor";
+  font-size: 17px;
+}
+@font-face {
+  font-family: "actor";
+  src: url(../fonts/Actor-Regular.ttf);
+}
+@font-face {
+  font-family: "gothic-Regular";
+  src: url(../fonts/GothicA1-Regular.ttf);
+}
+@font-face {
+  font-family: "gothic-extrabold";
+  src: url(../fonts/GothicA1-ExtraBold.ttf);
+}

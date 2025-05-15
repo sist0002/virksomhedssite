@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contact.css" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <div>
+      <h2>Contact me</h2>
+      <div id="contactinfo">
+        <p>Tlf: + 45 20 44 14 44 <br />E-mail: art@gabriellakauffmann.dk <br />Adress: Rosenvængets Allé 6A, 2100 København Ø</p>
+      </div>
+    </div>
+    <section>
+      <form>
+        <div>
+          <h2>Inquiries</h2>
+          <fieldset>
+            <legend>Name and Email</legend>
+            <div>
+              <label for="f-name">First name</label>
+              <input id="f-name" type="text" />
+            </div>
+            <div>
+              <label for="l-name">Last name</label>
+              <input id="l-name" type="text" />
+            </div>
+            <div>
+              <label for="email">E-mail</label>
+              <input id="email" type="text" />
+            </div>
+            <div>
+              <label for="emailrepeat">Repeat e-mail</label>
+              <input id="emailrepeat" type="text" />
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Subject</legend>
+            <div>
+              <input id="buy" type="radio" />
+              <label for="buy">Buying art</label>
+            </div>
+            <div>
+              <input id="showcase" type="radio" />
+              <label for="showcase">Interest in showcasing Gabriellas work</label>
+            </div>
+            <div>
+              <input id="question" type="radio" />
+              <label for="question"> Further questions</label>
+            </div>
+            <div>
+              <input id="other" type="radio" />
+              <label for="other">Other</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <div>
+              <label for="message">Message</label>
+              <textarea name="message" id="people"></textarea>
+            </div>
+          </fieldset>
+          <button>Submit</button>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>

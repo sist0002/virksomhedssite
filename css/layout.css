@@ -1,6 +1,7 @@
 .picture_of_Gabriella {
   width: 100%;
   height: auto;
+  padding-top: 50px;
   padding-bottom: 50px;
   max-width: 100%;
   display: block;
@@ -8,7 +9,7 @@
 
 .linje {
   border: none;
-  height: 1px;
-  background-color: rgb(0, 13, 255);
+  height: 3px;
+  background-color: black;
   margin: 20px 0;
 }

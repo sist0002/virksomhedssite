@@ -33,4 +33,13 @@
     height: 200px;
     resize: none;
   }
+  button {
+    display: block;
+    margin: auto;
+    background-color: #c08c62;
+    border-style: none;
+    padding: 0.5em;
+    border-radius: 4px;
+    color: white;
+  }
 }

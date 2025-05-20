@@ -20,14 +20,14 @@
 
 @font-face {
   font-family: "Gothic A1";
-  src: url("../fonts/Gothic_A1/GothicA1-Bold.ttf") format("truetype");
-  font-weight: bold;
+  src: url("../fonts/GothicA1-Regular.ttf") format("truetype");
+  font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Actor";
-  src: url("../fonts/Actor/Actor-Regular.ttf") format("truetype");
+  src: url("../fonts/Actor-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }

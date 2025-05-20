@@ -1,0 +1,67 @@
+:root {
+  /* FARVER – primære */
+  --text-color: #141412;
+  --background-color: #f4f2ec;
+
+  /* FARVER – visuelle accenter */
+  --accent-blue: #0707a3;
+  --surface-light: #bcc5d5;
+  --highlight-brown: #c08c62;
+
+  /* INTERAKTION (hoover mm.) */
+  --hover-color: var(--accent-blue);
+  --active-color: var(--highlight-brown);
+
+  /* FONTE */
+  --font-heading: "Gothic A1", sans-serif;
+  --font-body: "Actor", serif;
+  --font-link: var(--font-body);
+}
+
+@font-face {
+  font-family: "Gothic A1";
+  src: url("../fonts/Gothic_A1/GothicA1-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Actor";
+  src: url("../fonts/Actor/Actor-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background);
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}

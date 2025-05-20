@@ -1,0 +1,53 @@
+.collections {
+  padding: 2rem 1rem;
+  margin: 0 auto;
+  background-color: var(--background-color);
+}
+
+.collections-intro {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.collections-intro h1 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+.collections-intro p {
+  font-size: 0.95rem;
+  max-width: 32ch;
+  margin: 0 auto;
+}
+
+.artwork {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.artwork h2 {
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.artwork img {
+  max-width: 40%;
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+.artwork p {
+  font-size: 0.75rem;
+  line-height: 1.5;
+  max-width: 40ch;
+  margin: 0 auto;
+  color: var(--text-color);
+}

@@ -59,13 +59,12 @@
 }
 
 .image-wrapper:hover img {
-  filter: blur(20px); /* Se næste punkt 👇 */
+  filter: blur(20px);
 }
 
-/* === Centrer tekst med flex === */
 .image-hover-text {
   position: absolute;
-  top: 55%; /* Lidt længere ned end midt */
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: var(--font-heading);

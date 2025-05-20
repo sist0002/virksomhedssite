@@ -48,3 +48,20 @@
     border-style: solid;
   }
 }
+@media (width>1000px) {
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    #contactbox {
+      border-right: 1px solid black;
+    }
+    #formbox {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+  }
+  .formgrid_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

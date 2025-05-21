@@ -2,7 +2,94 @@
   background-color: #f4f2ec;
   margin-left: 10%;
   margin-right: 10%;
+
+  #contactinfo {
+    margin-bottom: 5em;
+    margin-left: 2em;
+    margin-right: 2em;
+    padding: 0;
+    line-height: 2em;
+  }
+  fieldset {
+    border-style: none;
+  }
+  .formgroup_1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 10%;
+    margin-right: 10%;
+    input {
+      margin-bottom: 1.5em;
+      height: 2em;
+    }
+  }
+  .formgrid_2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1.5em;
+  }
+  textarea {
+    width: 100%;
+    height: 200px;
+    resize: none;
+  }
+  button {
+    display: block;
+    margin: auto;
+    background-color: #c08c62;
+    border-style: none;
+    padding: 0.5em;
+    border-radius: 4px;
+    color: white;
+  }
+  input,
+  textarea {
+    border-color: #c08c62;
+    border-style: solid;
+  }
 }
-#contactinfo {
-  margin: 2em;
+#yourInquery {
+  color: #0707a3;
+  text-align: center;
+  #sumbox {
+    border: 2px solid #0707a3;
+    line-height: 0.4em;
+    div {
+      margin-bottom: 2em;
+    }
+    .bold {
+      font-weight: bold;
+    }
+  }
+}
+
+input:user-valid {
+  border-color: #0707a3;
+}
+input:user-invalid {
+  border-color: #c08c62;
+}
+textarea:user-valid {
+  border-color: #0707a3;
+}
+textarea:user-invalid {
+  border-color: #c08c62;
+}
+
+@media (width>1000px) {
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    #contactbox {
+      border-right: 1px solid black;
+    }
+    #formbox {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+  }
+  .formgrid_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }

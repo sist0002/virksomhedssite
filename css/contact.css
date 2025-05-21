@@ -48,6 +48,34 @@
     border-style: solid;
   }
 }
+#yourInquery {
+  color: #0707a3;
+  text-align: center;
+  #sumbox {
+    border: 2px solid #0707a3;
+    line-height: 0.4em;
+    div {
+      margin-bottom: 2em;
+    }
+    .bold {
+      font-weight: bold;
+    }
+  }
+}
+
+input:user-valid {
+  border-color: #0707a3;
+}
+input:user-invalid {
+  border-color: #c08c62;
+}
+textarea:user-valid {
+  border-color: #0707a3;
+}
+textarea:user-invalid {
+  border-color: #c08c62;
+}
+
 @media (width>1000px) {
   .grid_1-1 {
     display: grid;

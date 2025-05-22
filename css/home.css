@@ -1,29 +1,107 @@
-#mainsection {
-  background-image: url(../GK_img/background.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  /* background-color: rgba(255, 255, 255, 0.1);
-  background-blend-mode: lighten; */
-}
-
-/* body::before {
-  content: "";
+/* Hamburger-menu */
+/* Off-screen-menu */
+.off-screen-menu {
+  background-color: rgba(7, 7, 163, 1);
+  height: 100vh;
+  width: 100%;
+  max-width: 450px;
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-image: url(../GK_img/background.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0.1;
-  z-index: -1; 
-} */
+  right: -450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 3rem;
+  transition: 0.3s ease;
+  z-index: 1;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: rgba(244, 242, 236, 1);
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.off-screen-menu.active {
+  right: 0;
+}
+nav {
+  padding: 1rem;
+  display: flex;
+}
+
+.ham-menu {
+  height: 50px;
+  width: 50px;
+  margin-left: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.ham-menu span {
+  height: 5px;
+  width: 100%;
+  background-color: rgb(59, 59, 251);
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s ease;
+}
+/* Opdeling af de tre stregner */
+.ham-menu span:nth-child(1) {
+  top: 25%;
+}
+.ham-menu span:nth-child(3) {
+  top: 75%;
+}
+
+/* hamburger-menu kryds funktion */
+.ham-menu.active span:nth-child(1) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.ham-menu.active span:nth-child(2) {
+  opacity: 0;
+}
+.ham-menu.active span:nth-child(3) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/* resten af home-siden css */
+
+body {
+  background-color: rgba(244, 242, 236, 1);
+}
 
 img {
-  width: 200px;
+  width: 100%;
   height: auto;
+}
+
+.citat {
+  text-align: center;
+  margin: 1em;
+  padding: 10em;
+  font-size: 50%;
+}
+
+.SIN,
+.ROML,
+.EVIR,
+.IBC {
+  margin: 3em;
+  padding: 3em;
+  text-align: center;
 }
 
 @media (width >900px) {
@@ -35,7 +113,7 @@ img {
     grid-column: 1/2;
   }
   img {
-    width: 300px; /* eller en anden fast værdi */
-    height: auto; /* bevarer proportioner */
+    width: 100%;
+    /*  margin: 2em; */
   }
 }

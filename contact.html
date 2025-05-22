@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/generel.css" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <div class="grid_1-1">
+      <div id="contactbox">
+        <h2>Contact me</h2>
+        <div id="contactinfo">
+          <p>Tlf: + 45 20 44 14 44 <br />E-mail: art@gabriellakauffmann.dk <br />Adress: Rosenvængets Allé 6A, 2100 København Ø</p>
+        </div>
+      </div>
+      <section id="formbox">
+        <form>
+          <h2>Inquiries</h2>
+          <div id="contactform">
+            <fieldset>
+              <!-- <legend>Name and Email</legend> -->
+              <div class="formgrid_1">
+                <div class="formgroup_1">
+                  <label for="f-name">First name</label>
+                  <input id="f-name" type="text" minlength="1" required />
+                </div>
+                <div class="formgroup_1">
+                  <label for="l-name">Last name</label>
+                  <input id="l-name" type="text" minlength="1" required />
+                </div>
+                <div class="formgroup_1">
+                  <label for="email">E-mail</label>
+                  <input id="email" type="email" required />
+                </div>
+                <div class="formgroup_1">
+                  <label for="emailrepeat">Repeat e-mail</label>
+                  <input id="emailrepeat" type="email" required />
+                </div>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Subject</legend>
+              <div class="formgrid_2">
+                <div class="formgroup_2">
+                  <input id="buy" type="radio" name="subject" value="Buying art" required />
+                  <label for="buy">Buying art</label>
+                </div>
+                <div class="formgroup_2">
+                  <input id="showcase" type="radio" name="subject" value="Interest in showcasing Gabriella's work" required />
+                  <label for="showcase">Interest in showcasing Gabriella's work</label>
+                </div>
+                <div class="formgroup_2">
+                  <input id="question" type="radio" name="subject" value="Further questions" required />
+                  <label for="question"> Further questions</label>
+                </div>
+                <div class="formgroup_2">
+                  <input id="other" type="radio" name="subject" value="Other" required />
+                  <label for="other">Other</label>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset>
+              <div>
+                <!-- <label for="message">Message</label> -->
+                <textarea name="message" id="message" placeholder="Message..." minlength="1" required></textarea>
+              </div>
+            </fieldset>
+          </div>
+          <button>Submit</button>
+          <div id="yourInquery">
+            <p>Thank you for your inquery. <br />You can expect a response in 1-3 business days.</p>
+            <p>Your inquery:</p>
+            <div id="sumbox">
+              <div>
+                <p class="bold">First name:</p>
+                <p id="fNameSum"></p>
+              </div>
+              <div>
+                <p class="bold">Last name:</p>
+                <p id="lNameSum"></p>
+              </div>
+              <div>
+                <p class="bold">E-mail:</p>
+                <p id="mailSum"></p>
+              </div>
+              <div>
+                <p class="bold">Subject:</p>
+                <p id="subjectSum"></p>
+              </div>
+              <div>
+                <p class="bold">Message:</p>
+                <p id="messageSum"></p>
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
+    </div>
+  </body>
+  <script src="js/contact.js"></script>
+</html>

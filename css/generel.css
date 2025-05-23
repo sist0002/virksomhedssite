@@ -1,7 +1,7 @@
 :root {
   /* FARVER – primære */
   --text-color: #141412;
-  --background-color: #f4f2ec;
+  --background-color: rgba(244, 242, 236, 1);
 
   /* FARVER – visuelle accenter */
   --accent-blue: #0707a3;

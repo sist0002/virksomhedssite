@@ -1,3 +1,19 @@
+.picture_of_Gabriella {
+  width: 100%;
+  height: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  max-width: 100%;
+  display: block;
+}
+
+.linje {
+  border: none;
+  height: 2px;
+  background-color: black;
+  margin: 20px 0;
+}
+
 .ptext {
   padding-right: 110px; 
   padding-left: 110px;

@@ -1,29 +1,27 @@
-#mainsection {
-  background-image: url(../GK_img/background.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  /* background-color: rgba(255, 255, 255, 0.1);
-  background-blend-mode: lighten; */
+
+body {
+  background-color: rgba(244, 242, 236, 1);
 }
 
-/* body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-image: url(../GK_img/background.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0.1;
-  z-index: -1; 
-} */
-
 img {
-  width: 200px;
+  width: 100%;
   height: auto;
+}
+
+.citat {
+  text-align: center;
+  margin: 1em;
+  padding: 10em;
+  font-size: 50%;
+}
+
+.SIN,
+.ROML,
+.EVIR,
+.IBC {
+  margin: 3em;
+  padding: 3em;
+  text-align: center;
 }
 
 @media (width >900px) {
@@ -35,7 +33,7 @@ img {
     grid-column: 1/2;
   }
   img {
-    width: 300px; /* eller en anden fast værdi */
-    height: auto; /* bevarer proportioner */
+    width: 100%;
+    /*  margin: 2em; */
   }
 }

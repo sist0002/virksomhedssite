@@ -4,42 +4,100 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/burger.css" />
+    <link rel="stylesheet" href="css/generel.css" />
+    <link rel="stylesheet" href="css/burger.css" />
     <title>Gabriella Kauffmann</title>
+    <link rel="icon" type="image/png" href="/GK_img/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/GK_img/favicon.svg" />
+    <link rel="shortcut icon" href="/GK_img/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/GK_img/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Gabrilla Kaufmann" />
+    <link rel="manifest" href="/GK_img/site.webmanifest" />
   </head>
   <body>
-    <header>
-      <!-- laves fælles -->
-      <div class="herosektion">
-        <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
-        <dotlottie-player src="https://lottie.host/dff30f87-ec56-4307-bf81-544eeca4bb0b/9HReP4xTf7.lottie" background="transparent" speed="1" style="width: 100%" loop autoplay></dotlottie-player>
+    <header class="site-header">
+      <div class="logo-container">
+        <a href="index.html">
+          <img src="GK_img/GK_img/logoGK.png" alt="logo" />
+        </a>
       </div>
+
+      <div class="title-image-container">
+        <img src="GK_img/GK_img/GK_Signatur.png" alt="Gabriella Kauffmann signatur" />
+      </div>
+      <div class="off-screen-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="collectionsMAIN.html">Collections</a></li>
+          <li><a href="about.html">About me</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <nav class="ham-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </nav>
     </header>
     <main id="mainsection">
+      <div class="herosektion">
+        <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+        <dotlottie-player src="https://lottie.host/dff30f87-ec56-4307-bf81-544eeca4bb0b/9HReP4xTf7.lottie" background="transparent" speed="1" style="width: 100%" autoplay></dotlottie-player>
+      </div>
       <section class="citat">
-        <p>“In a time when everything moves quickly and many of us long for depth and reflection, I strive to create spaces that feel genuine—both on canvas and in the digital realm."</p>
+        <p>
+          “In a time when everything moves quickly and many of us <br />
+          long for depth and reflection, I strive to create spaces that<br />
+          feel genuine—both on canvas and in the digital realm."
+        </p>
         <p><strong>- Gabriella Kauffmann, The Artist.</strong></p>
       </section>
       <section class="billeder">
         <div class="SIN">
           <h2>Structures in Net</h2>
-          <img src="GK_img/GK_SIN2.png" alt="maleri med net" />
+          <a href="collectionsMAIN.html">
+            <img src="GK_img/GK_SIN2.png" alt="maleri med net" />
+          </a>
         </div>
         <div class="ROML">
           <h2>Refelction of modern life</h2>
-          <img src="GK_img/GK_ROML3.png" alt="maleri af ROML" />
+          <a href="collectionsMAIN.html">
+            <img src="GK_img/GK_ROML3.png" alt="maleri af ROML" />
+          </a>
         </div>
         <div class="EVIR">
           <h2>Exploring vitality in relations</h2>
-          <img src="GK_img/GK_EVIR10.png" alt="maleri af EVIR" />
+          <a href="collectionsMAIN.html">
+            <img src="GK_img/GK_EVIR10.png" alt="maleri af EVIR" />
+          </a>
         </div>
         <div class="IBC">
           <h2>Influenced by COBRA</h2>
-          <img src="GK_img/GK_IBC5.png" alt="maleri af IBC" />
+          <a href="collectionsMAIN.html">
+            <img src="GK_img/GK_IBC5.png" alt="maleri af IBC" />
+          </a>
         </div>
       </section>
     </main>
-    <footer>
-      <!-- Laves fælles -->
+    <footer class="site-footer">
+      <div class="footer-content">
+        <a href="index.html">
+          <img src="GK_img/GK_img/logoGK.png" alt="logo" class="footer-logo" />
+        </a>
+
+        <div class="footer-icons">
+          <a href="https://www.instagram.com/gabriella_kauffmann/">
+            <img src="GK_img/GK_img/IGLogo.png" alt="Instagram" />
+          </a>
+          <a href="https://www.facebook.com/p/Gabriella-Kauffmann-100008042267877/">
+            <img src="GK_img/GK_img/FBLogo.png" alt="Facebook" />
+          </a>
+        </div>
+
+        <a href="contact.html" class="footer-contact">Contact</a>
+      </div>
     </footer>
+    <script src="js/ham-menu.js"></script>
   </body>
 </html>

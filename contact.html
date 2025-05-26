@@ -5,99 +5,150 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/contact.css" />
     <link rel="stylesheet" href="css/generel.css" />
+    <link rel="stylesheet" href="css/burger.css" />
     <title>Contact</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="/GK_img/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/GK_img/favicon.svg" />
+    <link rel="shortcut icon" href="/GK_img/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/GK_img/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Gabrilla Kaufmann" />
+    <link rel="manifest" href="/GK_img/site.webmanifest" />
   </head>
   <body>
-    <div class="grid_1-1">
-      <div id="contactbox">
-        <h2>Contact me</h2>
-        <div id="contactinfo">
-          <p>Tlf: + 45 20 44 14 44 <br />E-mail: art@gabriellakauffmann.dk <br />Adress: Rosenvængets Allé 6A, 2100 København Ø</p>
-        </div>
+    <header class="site-header">
+      <div class="logo-container">
+        <a href="index.html">
+          <img src="GK_img/GK_img/logoGK.png" alt="logo" />
+        </a>
       </div>
-      <section id="formbox">
-        <form>
-          <h2>Inquiries</h2>
-          <div id="contactform">
-            <fieldset>
-              <!-- <legend>Name and Email</legend> -->
-              <div class="formgrid_1">
-                <div class="formgroup_1">
-                  <label for="f-name">First name</label>
-                  <input id="f-name" type="text" minlength="1" required />
-                </div>
-                <div class="formgroup_1">
-                  <label for="l-name">Last name</label>
-                  <input id="l-name" type="text" minlength="1" required />
-                </div>
-                <div class="formgroup_1">
-                  <label for="email">E-mail</label>
-                  <input id="email" type="email" required />
-                </div>
-                <div class="formgroup_1">
-                  <label for="emailrepeat">Repeat e-mail</label>
-                  <input id="emailrepeat" type="email" required />
-                </div>
-              </div>
-            </fieldset>
-            <fieldset>
-              <legend>Subject</legend>
-              <div class="formgrid_2">
-                <div class="formgroup_2">
-                  <input id="buy" type="radio" name="subject" value="Buying art" required />
-                  <label for="buy">Buying art</label>
-                </div>
-                <div class="formgroup_2">
-                  <input id="showcase" type="radio" name="subject" value="Interest in showcasing Gabriella's work" required />
-                  <label for="showcase">Interest in showcasing Gabriella's work</label>
-                </div>
-                <div class="formgroup_2">
-                  <input id="question" type="radio" name="subject" value="Further questions" required />
-                  <label for="question"> Further questions</label>
-                </div>
-                <div class="formgroup_2">
-                  <input id="other" type="radio" name="subject" value="Other" required />
-                  <label for="other">Other</label>
-                </div>
-              </div>
-            </fieldset>
-            <fieldset>
-              <div>
-                <!-- <label for="message">Message</label> -->
-                <textarea name="message" id="message" placeholder="Message..." minlength="1" required></textarea>
-              </div>
-            </fieldset>
+
+      <div class="title-image-container">
+        <img src="GK_img/GK_img/GK_Signatur.png" alt="Gabriella Kauffmann signatur" />
+      </div>
+      <div class="off-screen-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="collectionsMAIN.html">Collections</a></li>
+          <li><a href="about.html">About me</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <nav class="ham-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </nav>
+    </header>
+    <main>
+      <div class="grid_1-1">
+        <div id="contactbox">
+          <h2>Contact me</h2>
+          <div id="contactinfo">
+            <p>Tlf: + 45 20 44 14 44 <br />E-mail: art@gabriellakauffmann.dk <br />Adress: Rosenvængets Allé 6A, 2100 København Ø</p>
           </div>
-          <button>Submit</button>
-          <div id="yourInquery">
-            <p>Thank you for your inquery. <br />You can expect a response in 1-3 business days.</p>
-            <p>Your inquery:</p>
-            <div id="sumbox">
-              <div>
-                <p class="bold">First name:</p>
-                <p id="fNameSum"></p>
-              </div>
-              <div>
-                <p class="bold">Last name:</p>
-                <p id="lNameSum"></p>
-              </div>
-              <div>
-                <p class="bold">E-mail:</p>
-                <p id="mailSum"></p>
-              </div>
-              <div>
-                <p class="bold">Subject:</p>
-                <p id="subjectSum"></p>
-              </div>
-              <div>
-                <p class="bold">Message:</p>
-                <p id="messageSum"></p>
+        </div>
+        <section id="formbox">
+          <form>
+            <h2>Inquiries</h2>
+            <div id="contactform">
+              <fieldset>
+                <!-- <legend>Name and Email</legend> -->
+                <div class="formgrid_1">
+                  <div class="formgroup_1">
+                    <label for="f-name">First name</label>
+                    <input id="f-name" type="text" minlength="1" required />
+                  </div>
+                  <div class="formgroup_1">
+                    <label for="l-name">Last name</label>
+                    <input id="l-name" type="text" minlength="1" required />
+                  </div>
+                  <div class="formgroup_1">
+                    <label for="email">E-mail</label>
+                    <input id="email" type="email" required />
+                  </div>
+                  <div class="formgroup_1">
+                    <label for="emailrepeat">Repeat e-mail</label>
+                    <input id="emailrepeat" type="email" required />
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>Subject</legend>
+                <div class="formgrid_2">
+                  <div class="formgroup_2">
+                    <input id="buy" type="radio" name="subject" value="Buying art" required />
+                    <label for="buy">Buying art</label>
+                  </div>
+                  <div class="formgroup_2">
+                    <input id="showcase" type="radio" name="subject" value="Interest in showcasing Gabriella's work" required />
+                    <label for="showcase">Interest in showcasing Gabriella's work</label>
+                  </div>
+                  <div class="formgroup_2">
+                    <input id="question" type="radio" name="subject" value="Further questions" required />
+                    <label for="question"> Further questions</label>
+                  </div>
+                  <div class="formgroup_2">
+                    <input id="other" type="radio" name="subject" value="Other" required />
+                    <label for="other">Other</label>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset>
+                <div>
+                  <!-- <label for="message">Message</label> -->
+                  <textarea name="message" id="message" placeholder="Message..." minlength="1" required></textarea>
+                </div>
+              </fieldset>
+            </div>
+            <button>Submit</button>
+            <div id="yourInquery">
+              <p>Thank you for your inquery. <br />You can expect a response in 1-3 business days.</p>
+              <p>Your inquery:</p>
+              <div id="sumbox">
+                <div>
+                  <p class="bold">First name:</p>
+                  <p id="fNameSum"></p>
+                </div>
+                <div>
+                  <p class="bold">Last name:</p>
+                  <p id="lNameSum"></p>
+                </div>
+                <div>
+                  <p class="bold">E-mail:</p>
+                  <p id="mailSum"></p>
+                </div>
+                <div>
+                  <p class="bold">Subject:</p>
+                  <p id="subjectSum"></p>
+                </div>
+                <div>
+                  <p class="bold">Message:</p>
+                  <p id="messageSum"></p>
+                </div>
               </div>
             </div>
-          </div>
-        </form>
-      </section>
-    </div>
+          </form>
+        </section>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <a href="index.html">
+          <img src="GK_img/GK_img/logoGK.png" alt="logo" class="footer-logo" />
+        </a>
+        <div class="footer-icons">
+          <a href="https://www.instagram.com/gabriella_kauffmann/">
+            <img src="GK_img/GK_img/IGLogo.png" alt="Instagram" />
+          </a>
+          <a href="https://www.facebook.com/p/Gabriella-Kauffmann-100008042267877/">
+            <img src="GK_img/GK_img/FBLogo.png" alt="Facebook" />
+          </a>
+        </div>
+        <a href="contact.html" class="footer-contact">Contact</a>
+      </div>
+    </footer>
   </body>
   <script src="js/contact.js"></script>
+  <script src="js/ham-menu.js"></script>
 </html>

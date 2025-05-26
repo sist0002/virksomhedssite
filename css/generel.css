@@ -65,7 +65,10 @@ img {
   display: block;
   object-fit: cover;
 }
-/* HEADER */
+
+
+/* HEADER */ 
+
 .site-header {
   display: flex;
   align-items: center;

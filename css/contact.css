@@ -6,7 +6,6 @@ main {
   margin-left: 10%;
   margin-right: 10%;
   padding-bottom: 20%;
-
   #contactinfo {
     margin-bottom: 5em;
     margin-left: 2em;
@@ -86,6 +85,7 @@ textarea:user-invalid {
     grid-template-columns: 1fr 1fr;
     #contactbox {
       border-right: 1px solid black;
+      padding: 0 10% 0 0;
     }
     #formbox {
       padding-left: 5%;

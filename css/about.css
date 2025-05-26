@@ -6,7 +6,7 @@
 }
 
 /* Knap */
-a {
+.CV {
   display:inline-block; 
   background-color: #c08c62;
   text-decoration: none; 
@@ -16,10 +16,12 @@ a {
   border-radius: 30px;
   border: 2px solid #141412; 
   color: black;
+
 }
 
-a:hover {
+.CV:hover {
   background-color: #F4F2EC;
+  text-decoration: none; 
 }
 
 .linje {

@@ -10,16 +10,37 @@
     <link rel="stylesheet" href="css/burger.css" />
 
     <title>About</title>
-    <link rel="icon" type="image/png" href="/GK_img/favicon-96x96.png" sizes="96x96" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/GK_img/favicon-96x96.png"
+      sizes="96x96"
+    />
     <link rel="icon" type="image/svg+xml" href="/GK_img/favicon.svg" />
     <link rel="shortcut icon" href="/GK_img/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/GK_img/apple-touch-icon.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/GK_img/apple-touch-icon.png"
+    />
     <meta name="apple-mobile-web-app-title" content="Gabrilla Kaufmann" />
     <link rel="manifest" href="/GK_img/site.webmanifest" />
   </head>
   <body>
-    <header>
-    <div class="off-screen-menu">
+    <header class="site-header">
+      <div class="logo-container">
+        <a href="index.html">
+          <img src="GK_img/GK_img/logoGK.png" alt="logo" />
+        </a>
+      </div>
+
+      <div class="title-image-container">
+        <img
+          src="GK_img/GK_img/GK_Signatur.png"
+          alt="Gabriella Kauffmann signatur"
+        />
+      </div>
+      <div class="off-screen-menu">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="collectionsMAIN.html">Collections</a></li>
@@ -32,7 +53,7 @@
         <span></span>
         <span></span>
       </nav>
-  </header>
+    </header>
     <main>
       <img
         src="img/Gabriella_about.png"
@@ -80,9 +101,10 @@
           highlight the universal connection between people.
         </p>
         <a
+          class="CV"
           href="https://www.gabriellakauffmann.dk/_files/ugd/a20587_ddc71faba1504f19b3c140e6a0d28717.pdf"
         >
-          <strong>CV</strong></a
+          CV</a
         >
       </div>
 
@@ -119,6 +141,26 @@
         </div>
       </div>
     </main>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <a href="index.html">
+          <img src="GK_img/GK_img/logoGK.png" alt="logo" class="footer-logo" />
+        </a>
+
+        <div class="footer-icons">
+          <a href="https://www.instagram.com/gabriella_kauffmann/">
+            <img src="GK_img/GK_img/IGLogo.png" alt="Instagram" />
+          </a>
+          <a
+            href="https://www.facebook.com/p/Gabriella-Kauffmann-100008042267877/"
+          >
+            <img src="GK_img/GK_img/FBLogo.png" alt="Facebook" />
+          </a>
+        </div>
+
+        <a href="contact.html" class="footer-contact">Contact</a>
+      </div>
+    </footer>
   </body>
   <script src="js/ham-menu.js"></script>
 </html>
